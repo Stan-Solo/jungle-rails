@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for shopping at Jungle! </h1>
+    <h3>
+      You have purchased stuff at jungle.com,<br>
+      Here it is: 
+    </h3>
+    <%= @order.line_items.each do |item|  %>
+      <p> 
+        <%= item.product.name %>
+      </p>
+      <p> 
+        <%= item.product.price %>
+      </p>
+    <% end %>
+    <p> Your subtotal is: <%= order.total_cents / 100.0 %>
+    <p>Thanks for shopping and have a great day!</p>
+  </body>
+</html>
