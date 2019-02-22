@@ -1,7 +1,7 @@
 class ReceiptMailer < ApplicationMailer
 
-  def receipt_email
+  def receipt_email(order)
     @order = order
-    mail(to: @order.email, subject: Thank you for shopping with us! Order # #{@order.id})    
+    mail(to: @order.email, subject: "Thank you for shopping with us! Order # #{@order.id}")    
   end
 end
