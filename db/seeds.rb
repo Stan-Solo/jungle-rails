@@ -132,5 +132,10 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+# Reviews seeds:
+
+Review.create!(product_id:2, user_id: 1, description:Faker::Hipster.paragraph(2), rating: 5)
+Review.create!(product_id:3, user_id: 1, description:Faker::Hipster.paragraph(2), rating: 2)
+Review.create!(product_id:5, user_id: 1, description:Faker::Hipster.paragraph(3), rating: 3)
 
 puts "DONE!"
