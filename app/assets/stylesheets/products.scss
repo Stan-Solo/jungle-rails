@@ -77,6 +77,21 @@ main section.categories-show {
   }
 }
 
+.reviews {
+  border: 1px solid rgb(161, 145, 145);
+  padding: 8px;
+  margin: 8px;
+
+  .name {
+  font-weight: bold;
+  }
+
+  .date {
+  font-size: .7em;
+  }
+
+}
+
 main section.products-show {
 
   .product-detail {
