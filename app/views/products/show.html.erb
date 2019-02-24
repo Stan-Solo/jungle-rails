@@ -48,7 +48,7 @@
           <div class="reviews">
             <p class="name"><%= r.user.first_name %> <%= r.user.last_name %></p>
               <p>"<%= r.description%>"</p>
-              <p> Rating <%=r.rating%> out of 5</p>
+              <p> Rating <%=r.rating%> of 5</p>
               <p class="date"><i><%=r.created_at%></i></p>
               <% if current_user %>
                 <% if current_user.email == r.user.email %>
