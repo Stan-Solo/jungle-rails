@@ -4,8 +4,8 @@ A mini e-commerce application built with Ruby and Rails
 
 ## Screenshots
 
-!["1"](https://github.com//Stan-Solo/jungle-rails/blob/master/screenshotscreenshot%20from%202019-02-24%2013-24-23.png?raw=true )
-!["2"](https://github.com//Stan-Solo/jungle-rails/blob/master/screenshotscreenshot%20from%202019-02-24%2013-24-58.png?raw=true )
+!["1"](https://github.com/Stan-Solo/jungle-rails/blob/master/screenshotscreenshot%20from%202019-02-24%2013-24-23.png?raw=true )
+!["2"](https://github.com/Stan-Solo/jungle-rails/blob/master/screenshotscreenshot%20from%202019-02-24%2013-24-58.png?raw=true )
 
 
 ## Setup
