@@ -5,8 +5,21 @@ RSpec.describe User, type: :model do
   user = User.new(first_name: 'The', 
                   last_name: 'Pope', 
                   email: 'the_pope@church.com', 
-                  password: 'hi', 
-                  password_confirmation: 'hi')
+                  password: 'goodday', 
+                  password_confirmation: 'goodday')
+
+  describe '.authenticate_with_credentials' do
+    it 'is expected to authenticate properly given user email and password' do
+      user.save!
+      expect(User.authenticate_with_credentials(user.email, user.password)).to match(user)  
+    end
+    it 'is expected to be nil given incorrect password' do
+      expect(User.authenticate_with_credentials(user.email, 'some_password')).to match(nil)  
+    end
+    it 'is expected to be nil given incorrect email' do
+      expect(User.authenticate_with_credentials('random@email.com', user.password)).to match(nil)  
+    end
+  end
 
   describe 'Validations' do
     it 'is valid with names, email, and password' do
@@ -53,11 +66,4 @@ RSpec.describe User, type: :model do
       expect(user).to_not be_valid
     end
   end
-
-  
-
-
 end
-
-
-#email must be unique, not present in the db
