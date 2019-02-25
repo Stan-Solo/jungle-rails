@@ -2,6 +2,26 @@
 
 A mini e-commerce application built with Ruby and Rails
 
+## Features
+
+#### Implemented the following features:
+
+**Product Ratings** - Allows logged in users to be able to review and rate products
+
+**Admin basic authorization** - Added basic http authorization in order to secure admin resources
+
+**Order receipt** - E-mail receipt sent upon order completion to user's email
+
+**Order details** - Enhanced the order show page to display information about user's order
+
+**User Authentication** - Allow visitors to register or log in with a user account
+
+**Admin categories** - Implement the abilities for administrators to create new categories and to see a list of all categories
+
+**Empty cart fix** - If the user tries to check out with an empty cart, prevent that, and provide a link to home page
+
+**Sold-out badge** - when a product has zero quantity, disaplays a sold out badge on the product list page
+
 ## Screenshots
 
 !["1"](https://raw.githubusercontent.com/Stan-Solo/jungle-rails/master/screenshots/Screenshot%20from%202019-02-24%2013-24-23.png )
